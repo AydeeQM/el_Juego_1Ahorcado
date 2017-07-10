@@ -40,3 +40,23 @@ function contarCaracter(palabra){
   console.log(arr);
 }
 console.log(contarCaracter(['casa', 'mamamia']));
+
+//EJERCICIO 4
+function contarPalabras(texto){
+  var contar = texto.split(' ');
+  return contar.length;
+}
+console.log(contarPalabras("el mundo lo es todo"));
+
+
+//EJERCICIO 5
+function palabraLarga(texto){
+  var arr = [];
+  for(var i=0; i<texto.length; i++){
+    for(var j=0; j<texto[i].length; j++){
+      arr +=texto[i][j].split('').length;
+    }
+  }
+  console.log(arr);
+}
+console.log(palabraLarga(['leon', 'mono']));
